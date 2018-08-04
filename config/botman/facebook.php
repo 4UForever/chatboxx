@@ -42,7 +42,7 @@ return [
     | The payload which is sent when the Get Started Button is clicked.
     |
     */
-    'start_button_payload' => 'GET_STARTED',
+    'start_button_payload' => 'Welcome to sawanshop chatbot, Please choose message type from the menu :)',
 
     /*
     |--------------------------------------------------------------------------
@@ -79,22 +79,42 @@ return [
             'composer_input_disabled' => 'true',
             'call_to_actions' => [
                 [
-                    'title' => 'My Account',
+                    'title' => 'Template to test',
                     'type' => 'nested',
                     'call_to_actions' => [
                         [
+                            'title' => 'Quick Replies',
+                            'type' => 'postback',
+                            'payload' => 'QUICK_PAYLOAD',
+                        ],
+                        [
+                            'title' => 'List Template',
+                            'type' => 'postback',
+                            'payload' => 'LIST_PAYLOAD',
+                        ],
+                        [
+                            'title' => 'Generic Template',
+                            'type' => 'postback',
+                            'payload' => 'GENERIC_PAYLOAD',
+                        ],
+                        [
+                            'title' => 'Media',
+                            'type' => 'postback',
+                            'payload' => 'MEDIA_PAYLOAD',
+                        ],
+                        /*[
                             'title' => 'Pay Bill',
                             'type' => 'postback',
                             'payload' => 'PAYBILL_PAYLOAD',
-                        ],
+                        ],*/
                     ],
                 ],
-                [
+                /*[
                     'type' => 'web_url',
                     'title' => 'Latest News',
                     'url' => 'http://botman.io',
                     'webview_height_ratio' => 'full',
-                ],
+                ],*/
             ],
         ],
     ],
