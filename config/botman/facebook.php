@@ -42,7 +42,7 @@ return [
     | The payload which is sent when the Get Started Button is clicked.
     |
     */
-    'start_button_payload' => 'Welcome to sawanshop chatbot, Please choose message type from the menu :)',
+    'start_button_payload' => 'GET_STARTED',
 
     /*
     |--------------------------------------------------------------------------
@@ -76,7 +76,7 @@ return [
     'persistent_menu' => [
         [
             'locale' => 'default',
-            'composer_input_disabled' => 'true',
+            'composer_input_disabled' => 'false',
             'call_to_actions' => [
                 [
                     'title' => 'Template to test',

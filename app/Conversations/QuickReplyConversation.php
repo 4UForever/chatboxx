@@ -20,6 +20,7 @@ class QuickReplyConversation extends Conversation
 
         return $this->ask($question, function (Answer $answer) {
             if ($answer->isInteractiveMessageReply()) {
+                $this->bot->types();
                 if($answer->getValue() === 'heineken') {
                     $this->bot->reply('Wow! You like Heineken same as me');
                 } else if($answer->getValue() === 'chang'){
